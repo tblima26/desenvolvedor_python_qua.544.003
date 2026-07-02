@@ -42,15 +42,6 @@ Este repositório foi criado para armazenar todos os projetos, desafios e exerc�
 
 Aqui está como os arquivos estão organizados:
 
-* `/Partes`: Desafios rápidos e fixação de conteúdo de cada aula.
-* `/projetos`: Projetos mais robustos desenvolvidos no decorrer do curso.
-
+* `/Partes`: Programas simples mostrando as aulas e como implementar seus recursos.
+* `/[xx]_projeto`: Projeto simplificado e especifico de cada função.
 ---
-
-## 🚀 Como Executar os Projetos
-
-Se você quiser rodar os códigos deste repositório na sua máquina, siga os passos abaixo:
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
