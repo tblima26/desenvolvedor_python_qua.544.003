@@ -41,4 +41,6 @@ while True:
     case _: 
       input('Opçao invalida.')
       continue
+
+
   
