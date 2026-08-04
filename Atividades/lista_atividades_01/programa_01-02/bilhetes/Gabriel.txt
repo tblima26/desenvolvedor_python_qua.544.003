@@ -1,9 +1,9 @@
 ========================================
        🎟️ BILHETE EMITIDO! 🎟️           
 ========================================
- Cliente: Pedro
- Idade:   41 anos
- Filme:   As Tranças do Rei Careca
+ Cliente: Gabriel
+ Idade:   30 anos
+ Filme:   O Incrível Mistério da Lagoa Seca
 ========================================
  Bom filme e divirta-se!
 ========================================

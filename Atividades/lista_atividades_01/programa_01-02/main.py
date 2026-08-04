@@ -50,16 +50,17 @@ def salvarBilhete(nome, idade, filme_escolhido):
         f.write(conteudo)
         input('\n ✔  Arquivo gravado com sucesso! Pressione Enter para continuar...')
         limpar()
-   
+
+#NOTE - O PROGAMA COMEÇA DAQUI PRA BAIXO
 limpar()
 print('--- CINE COMÉDIA DO ABSURDO ---')
 nome = input('Nome: ')
 idade = int(input('Idade: '))
-
 while True:
   limpar()
   option = menu()
   match option:
+    
     case 1:
         valido = "Sucesso"
         filme_escolhido = "As Tranças do Rei Careca"

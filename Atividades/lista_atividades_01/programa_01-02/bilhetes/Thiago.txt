@@ -1,9 +1,0 @@
-========================================
-       🎟️ BILHETE EMITIDO! 🎟️           
-========================================
- Cliente: Thiago
- Idade:   20 anos
- Filme:   O Incrível Mistério da Lagoa Seca
-========================================
- Bom filme e divirta-se!
-========================================
