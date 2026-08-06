@@ -28,4 +28,12 @@ if(pesquisa in cidades):
   print('Cidade encontrada!')
 else:
   print(f'Cidade {pesquisa} não está na Lista')
+
+#REVIEW - 3 Modo
+for cidade in cidades:
+  # Compara tudo em minúsculo para não ter erro de digitação
+  if pesquisa in cidade.lower():
+    resultados.append(cidade)
+
+print("Cidades encontradas:", resultados)
 '''
