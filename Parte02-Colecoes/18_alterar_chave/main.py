@@ -3,9 +3,10 @@ usuario = {
     "nome": "João",
     "idade": 25,
 }
-
-# LINK - Metodo 1
-
-usuario["idade"] = 30
-for chave in usuario:
-  print(f"{chave.lower()}: {usuario.get(chave)}")
+chave = input('Chave: ').strip().lower()
+if chave in usuario:
+  usuario[chave] = input(f'Valor para {chave}').strip()
+  for chave,valor in usuario.items():
+    print(f"{chave.capitalize()}: {valor}")
+else:
+  print('Chave não encontrada.')
