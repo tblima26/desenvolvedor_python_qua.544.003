@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "thiago",
+        "n1": 1.0,
+        "n2": 2.0,
+        "n3": 3.0,
+        "media": 2.0,
+        "situacao": "Reprovado"
+    },
+    {
+        "nome": "rafa",
+        "n1": 4.0,
+        "n2": 5.0,
+        "n3": 6.0,
+        "media": 5.0,
+        "situacao": "Reprovado"
+    },
+    {
+        "nome": "jess",
+        "n1": 7.0,
+        "n2": 8.0,
+        "n3": 9.0,
+        "media": 8.0,
+        "situacao": "Aprovado"
+    },
+    {
+        "nome": "gabriel",
+        "n1": 7.0,
+        "n2": 5.0,
+        "n3": 3.0,
+        "media": 5.0,
+        "situacao": "Reprovado"
+    },
+    {
+        "nome": "renan",
+        "n1": 1.0,
+        "n2": 5.0,
+        "n3": 9.0,
+        "media": 5.0,
+        "situacao": "Reprovado"
+    }
+]
