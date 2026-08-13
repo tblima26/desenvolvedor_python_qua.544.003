@@ -46,35 +46,31 @@ while True:
   limpaTela()
   opcao = menu()
   limpaTela()
-  if (opcao ==1 or opcao == 2):
-    usuarios.append(lerUsuario())
-    match opcao:
-      case 1:
-        limpaTela()
-        arquivo1 = input("Arquivo: ")
-        with open(f'23_json/banco/{arquivo1}.json','w',encoding="utf-8") as f:
+  usuarios.append(lerUsuario())
+  match opcao:
+    case 1:
+      limpaTela()
+      arquivo1 = input("Arquivo: ")
+      with open(f'23_json/banco/{arquivo1}.json','w',encoding="utf-8") as f:
+        json.dump(usuarios,f)
+    case 2:
+      limpaTela()
+      listarArquivos()
+      abrir = input("\nArquivo: ")
+      if abrir:
+        with open(f'23_json/banco/{abrir}.json','w',encoding="utf-8") as f:
           json.dump(usuarios,f)
-      case 2:
-        limpaTela()
-        listarArquivos()
-        abrir = input("\nArquivo: ")
-        if abrir:
-          with open(f'23_json/banco/{abrir}.json','w',encoding="utf-8") as f:
-            json.dump(usuarios,f)
-  else:
-    match opcao:
-      case 3:
-        limpaTela()
-        listarArquivos()
-        abrir = input(f'\n\nNome do Arquivo: ')
-        with open(f'23_json/banco/{abrir}.json','r',encoding="utf-8") as f:
-          usuarios = json.load(f)
-        for usuario in usuarios:
-          for chave, valor in usuario.items():
-            print(f'{chave.capitalize()}: {valor}')
-        input('\nAperte para continuar...')
-
-      case 4:
-        break
-      case _:
-        input('\nOpção invalida. \n\nAperte para continuar...')
+    case 3:
+      limpaTela()
+      listarArquivos()
+      abrir = input(f'\n\nNome do Arquivo: ')
+      with open(f'23_json/banco/{abrir}.json','r',encoding="utf-8") as f:
+        usuarios = json.load(f)
+      for usuario in usuarios:
+        for chave, valor in usuario.items():
+          print(f'{chave.capitalize()}: {valor}')
+      input('\nAperte para continuar...')
+    case 4:
+      break
+    case _:
+      input('\nOpção invalida. \n\nAperte para continuar...')
