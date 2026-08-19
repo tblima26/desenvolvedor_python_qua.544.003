@@ -28,5 +28,15 @@ def main():
             resultado = nominador / denominador
         print(f"{nominador} / {denominador} = {resultado:.5f}")
 
+    print(f"\n\Proporção Aurea:")
+    for i in range(len(lista) -1):
+        nominador = lista[i]
+        denominador = lista[i+1]
+        if denominador == 0:
+            resultado = 0.0
+        else:
+            resultado = nominador / denominador
+        print(f"{nominador} / {denominador} = {resultado:.5f}")
+
 if __name__ == "__main__":
     main()
