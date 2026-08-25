@@ -21,10 +21,10 @@ Este repositório foi criado para armazenar todos os projetos, desafios e exerc�
 
 - [x] **Fundamentos do Python:** Variáveis, tipos de dados (strings, ints, floats, booleanos).
 - [x] **Estruturas de Controle:** Condicionais (`if`, `elif`, `else`) e Laços de repetição (`while`, `for`).
-- [ ] **Estruturas de Dados:** Listas, tuplas, dicionários e conjuntos.
-- [ ] **Funções e Modularização:** Criação de funções (`def`), escopo e importação de bibliotecas.
-- [ ] **Orientação a Objetos (POO):** Classes, objetos, métodos e herança.
-- [ ] **Manipulação de Arquivos:** Leitura e escrita de arquivos `.txt` e `.csv`.
+- [x] **Estruturas de Dados:** Listas, tuplas, dicionários e conjuntos.
+- [x] **Funções e Modularização:** Criação de funções (`def`), escopo e importação de bibliotecas.
+- [x] **Orientação a Objetos (POO):** Classes, objetos, métodos e herança.
+- [x] **Manipulação de Arquivos:** Leitura e escrita de arquivos `.txt` e `.csv`.
 
 > 💡 *Nota: Marque com [x] o que já aprendeu e com [ ] o que ainda vai aprender ao longo do curso!*
 
