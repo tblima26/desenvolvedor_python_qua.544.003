@@ -13,10 +13,10 @@ def main():
     print("\n--- Testando a Mãe ---")
     mae = Mae("Ana", "Loiro", "Azuis")
     mae.exibirDados()
-
     print("\n--- Testando o Filho (Herança Múltipla) ---")
     filho = Filho("Lucas", 45.0, 1.50, "Castanho", "Castanhos")
     filho.exibirDados()
+    
 
 if __name__ == '__main__':
     main()
