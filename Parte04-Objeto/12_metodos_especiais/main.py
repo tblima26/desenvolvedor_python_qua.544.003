@@ -21,7 +21,7 @@ def main():
   print(f'Tamanho do nome: {len(pessoa3)}')
   print(f'Idade usando o int: {int(pessoa3)}')
   print(f'{"=" * 30}\n')
-  del pessoa1 
+  del pessoa1
   del pessoa2
   del pessoa3
   print(f'\n\n{"=" * 12} FIM {"=" * 12}')
