@@ -1,6 +1,0 @@
-=== EXTRATO BANCÁRIO ===
-Titular: Thiago
-CPF: 0123456
-Agência: 0014
-Conta: 12345-6
-Saldo Atual: R$ 930.00
