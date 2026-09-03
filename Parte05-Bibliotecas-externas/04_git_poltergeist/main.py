@@ -1,7 +1,8 @@
 from datetime import date
 from time import sleep
 import pyautogui as py
-
+#NOTE - Gerar o executavel:
+# pyinstaller --onefile --name "GitPush Poltergeist v1.0" --icon "icon/ghost.ico" main.py
 def hoje():
   return date.today().strftime(f"%d/%m/%y")
 
@@ -36,6 +37,7 @@ def main ():
   abrir_terminal()
   abrir_pasta()
   comandos_git()
+  py.alert(text='Programa realizado com Sucesso!', button='Finalizar')
   fechar_cmd()
 
 
