@@ -21,7 +21,7 @@ def abrir_pasta():
 def comandos_git():
   py.write('git add .')
   py.press('enter')
-  py.write(f'git commit -m "{criar_mensagem()} - Data: {hoje()}"')
+  py.write(f'git commit -m " Automação - Data: {hoje()}"')
   py.press('enter')
   py.write('git push')
   py.press('enter')  
