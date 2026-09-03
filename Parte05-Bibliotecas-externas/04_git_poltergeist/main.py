@@ -1,6 +1,6 @@
-import pyautogui as py
-from time import sleep
 from datetime import date
+from time import sleep
+import pyautogui as py
 
 def hoje():
   return date.today().strftime(f"%d/%m/%y")
@@ -27,8 +27,9 @@ def comandos_git():
   py.press('enter')  
 
 def fechar_cmd():
-  py.hotkey('alt','f')
-  print('💣🔥 Commit realizado com SUCESSO!! ')
+  sleep(3)
+  py.write('exit')
+  py.press('enter')  
 
 def main ():
   py.PAUSE = 0.7
