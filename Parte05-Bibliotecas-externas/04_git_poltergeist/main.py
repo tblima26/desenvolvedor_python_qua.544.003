@@ -21,16 +21,21 @@ def abrir_pasta():
 def comandos_git():
   py.write('git add .')
   py.press('enter')
-  py.write(f'git commit -m " Automação - Data: {hoje()}"')
+  py.write(f'git commit -m " Aula do Dia: {hoje()}"')
   py.press('enter')
   py.write('git push')
   py.press('enter')  
+
+def fechar_cmd():
+  py.hotkey('alt','f')
+  print('💣🔥 Commit realizado com SUCESSO!! ')
 
 def main ():
   py.PAUSE = 0.7
   abrir_terminal()
   abrir_pasta()
   comandos_git()
+  fechar_cmd()
 
 
 
