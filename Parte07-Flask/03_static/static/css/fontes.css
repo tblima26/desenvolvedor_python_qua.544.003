@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'CitadelBlackrose';
+    src: url('../fonts/citadel_of_blackrose.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Criando a variável */
+:root {
+    --fonte-customizada: 'CitadelBlackrose', sans-serif;
+}
