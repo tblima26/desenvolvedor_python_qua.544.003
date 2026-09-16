@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Poppins';
+  /* Como o CSS já está dentro de static/css, volta uma pasta e entra em fonts */
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mystery';
+  /* Como o CSS já está dentro de static/css, volta uma pasta e entra em fonts */
+  src: url('../fonts/MysteryQuest-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Mystery', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
