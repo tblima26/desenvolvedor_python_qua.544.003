@@ -22,6 +22,7 @@ def comitar():
     py.write(f'git commit -m "Commit do dia {hoje}"'); py.press('enter')
     py.write('git push'); py.press('enter')
     py.alert("Continuar....")
+    py.sleep(3)
     py.write('exit')
     py.press('enter')
   else:
