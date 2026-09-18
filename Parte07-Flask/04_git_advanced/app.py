@@ -1,8 +1,16 @@
 from flask import Flask, render_template, request
-import pyautogui as py
 from datetime import date
+import pyautogui as py
+import webview
+import sys
+import os
 
-app = Flask(__name__)
+if getattr(sys, 'frozen', False):
+  template_folder = os.path.join(sys._MEIPASS, 'templates')
+  static_folder = os.path.join(sys._MEIPASS, 'static')
+  app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
+else:
+  app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -31,4 +39,14 @@ def comitar():
   return render_template('index.html')
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  # app.run(debug=True)
+  window = webview.create_window(
+    title="Git Advanced",
+    url=app,
+    width=600,
+    height=600,
+  )
+  webview.start(debug=False)
+
+  #NOTE - Comando para gerar o build da aplicação:
+  # pyinstaller --onefile --noconsole --name "Git Advanced" --icon "static/icons/ghost.ico" --add-data "templates;templates" --add-data "static;static" app.py
