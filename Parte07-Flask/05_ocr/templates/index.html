@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+  <div class="row justify-content-center w-100">
+    <div class="col-md-6 col-lg-5">
+      <!-- Card no modo escuro (bg-dark com borda sutil) -->
+      <div class="card bg-dark border border-secondary shadow-lg rounded-4 p-4 p-md-5 text-center text-light">
+        <div class="card-body p-0">
+
+          <!-- Imagem com largura mantida em 200px -->
+          <img src="{{ url_for('static',filename='img/ocr.png') }}" alt="LOGO"
+            class="img-fluid mx-auto d-block mb-4 rounded-3" width="200">
+
+          <!-- Título adaptado para o tema dark -->
+          <h3 class="card-title fw-bold text-light mb-2">
+            Coloque sua imagem aqui
+          </h3>
+
+          <!-- Subtítulo adaptado -->
+          <p class="text-secondary small mb-4">Formatos aceitos: PNG, JPG</p>
+
+          <!-- Formulário -->
+          <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+            <div class="mb-3 text-start">
+              <label for="imagem" class="form-label fw-semibold text-light">Selecione uma imagem</label>
+
+              <!-- Input adaptado para o tema dark do Bootstrap -->
+              <input type="file" class="form-control bg-dark text-light border-secondary rounded-3 py-2 shadow-sm" id="imagem" name="imagem"
+                accept="image/*" required>
+            </div>
+
+            <!-- Botão de envio verde moderno -->
+            <div class="d-grid mt-4">
+              <button type="submit" class="btn btn-success py-2 fw-semibold shadow-sm">
+                <i class="bi bi-upload me-2"></i> Extrair texto
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
